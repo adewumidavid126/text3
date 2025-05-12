@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Packet Analysis with Wireshark</title>
+  <link rel="stylesheet" href="styleshark.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Packet Analysis with Wireshark</h1>
+      <p>Understand how to capture, filter, and analyze network traffic using Wireshark, a leading network protocol analyzer.</p>
+    </header>
+
+    <section class="content">
+      <h2>What is Wireshark?</h2>
+      <p>Wireshark is a powerful, open-source network packet analyzer. It allows you to inspect network traffic at a microscopic level, making it an essential tool for network troubleshooting, security analysis, and learning how protocols work.</p>
+
+      <h2>Installing Wireshark</h2>
+      <p>Wireshark can be installed from official sources or using package managers:</p>
+      <pre><code># For Debian/Ubuntu
+sudo apt update
+sudo apt install wireshark
+
+# For macOS (using Homebrew)
+brew install wireshark</code></pre>
+
+      <h2>Capturing Packets</h2>
+      <p>To begin capturing packets:</p>
+      <ul>
+        <li>Open Wireshark and select the appropriate network interface (e.g., eth0, wlan0).</li>
+        <li>Click the “Start Capture” button.</li>
+        <li>Stop the capture when you have enough data to analyze.</li>
+      </ul>
+
+      <h2>Using Filters</h2>
+      <p>Wireshark supports powerful filtering options:</p>
+      <ul>
+        <li><code>ip.addr == 192.168.1.1</code> – Filter packets by IP address</li>
+        <li><code>http</code> – Show only HTTP traffic</li>
+        <li><code>tcp.port == 443</code> – Filter by port number</li>
+      </ul>
+
+      <h2>Analyzing Traffic</h2>
+      <p>Once traffic is captured, you can inspect details like:</p>
+      <ul>
+        <li>Packet size and protocols used</li>
+        <li>TCP handshakes and flags</li>
+        <li>Payload contents (for plaintext protocols)</li>
+        <li>Suspicious patterns, delays, or anomalies</li>
+      </ul>
+
+      <h2>Tips for Security Analysts</h2>
+      <ul>
+        <li>Use color rules to highlight suspicious traffic.</li>
+        <li>Save capture files (.pcap) for later investigation.</li>
+        <li>Use <code>Follow TCP Stream</code> to reconstruct conversations.</li>
+      </ul>
+
+      <p>Learn more from the <a href="https://www.wireshark.org/docs/" target="_blank">Wireshark Documentation</a>.</p>
+
+      <a href="/t/indexT.html" class="back-link">← Back to Home</a>
+    </section>
+  </div>
+</body>
+</html>

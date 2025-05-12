@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding the OWASP Top 10</title>
+  <link rel="stylesheet" href="/blog/stylelab.css">
+  <style>
+    details {
+      background: #f9f9f9;
+      padding: 1em;
+      border-radius: 8px;
+      margin-bottom: 1em;
+      border: 1px solid #ddd;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 1.1em;
+    }
+    summary::-webkit-details-marker {
+      display: none;
+    }
+    details[open] summary::after {
+      content: " ▲";
+    }
+    summary::after {
+      content: " ▼";
+      float: right;
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+  <div class="blog-post-content">
+    <h1>Understanding the OWASP Top 10</h1>
+
+    <p>The Open Worldwide Application Security Project (OWASP) publishes a list of the 10 most critical web application security risks. Understanding and mitigating these helps developers build secure applications.</p>
+
+    <h2>📌 Quick Overview</h2>
+    <ul>
+      <li>1. Broken Access Control</li>
+      <li>2. Cryptographic Failures</li>
+      <li>3. Injection</li>
+      <li>4. Insecure Design</li>
+      <li>5. Security Misconfiguration</li>
+      <li>6. Vulnerable Components</li>
+      <li>7. Authentication Failures</li>
+      <li>8. Integrity Failures</li>
+      <li>9. Logging & Monitoring</li>
+      <li>10. SSRF</li>
+    </ul>
+
+    <!-- Collapsible OWASP Sections -->
+    <details>
+      <summary>1. Broken Access Control</summary>
+      <p>Improper access restrictions allow attackers to access unauthorized data or functions.</p>
+      <strong>Example:</strong> In 2019, Facebook exposed user photos due to broken access control in its APIs.
+    </details>
+
+    <details>
+      <summary>2. Cryptographic Failures</summary>
+      <p>Failures to protect data through encryption can lead to sensitive data leaks.</p>
+      <strong>Example:</strong> LinkedIn's 2012 breach involved unsalted SHA-1 hashes of passwords.
+    </details>
+
+    <details>
+      <summary>3. Injection</summary>
+      <p>Injection flaws like SQL or OS injections allow attackers to execute commands or queries in your app.</p>
+      <strong>Example:</strong> The 2017 Equifax breach was caused by an Apache Struts vulnerability (command injection).
+    </details>
+
+    <details>
+      <summary>4. Insecure Design</summary>
+      <p>Fundamental flaws in system architecture due to a lack of secure design principles.</p>
+      <strong>Example:</strong> Many apps fail to rate-limit login attempts, allowing brute-force attacks.
+    </details>
+
+    <details>
+      <summary>5. Security Misconfiguration</summary>
+      <p>Default settings, open cloud buckets, or exposed admin panels often lead to breaches.</p>
+      <strong>Example:</strong> Capital One’s 2019 data leak stemmed from a misconfigured AWS firewall.
+    </details>
+
+    <details>
+      <summary>6. Vulnerable and Outdated Components</summary>
+      <p>Using outdated libraries or packages with known exploits leaves apps open to attack.</p>
+      <strong>Example:</strong> Log4Shell (2021) exploited a flaw in the Log4j library used across thousands of systems.
+    </details>
+
+    <details>
+      <summary>7. Identification and Authentication Failures</summary>
+      <p>Weak login systems, poor password storage, or broken session management.</p>
+      <strong>Example:</strong> Instagram once allowed brute-forcing 6-digit recovery codes due to missing rate-limiting.
+    </details>
+
+    <details>
+      <summary>8. Software and Data Integrity Failures</summary>
+      <p>Failing to verify software updates or allowing tampering with CI/CD processes.</p>
+      <strong>Example:</strong> The SolarWinds attack injected malware into signed software updates.
+    </details>
+
+    <details>
+      <summary>9. Security Logging and Monitoring Failures</summary>
+      <p>Lack of audit logs or alerts delays incident response and increases damage.</p>
+      <strong>Example:</strong> Many ransomware attacks go unnoticed for days due to poor monitoring.
+    </details>
+
+    <details>
+      <summary>10. Server-Side Request Forgery (SSRF)</summary>
+      <p>Allows attackers to make requests from the server to internal systems.</p>
+      <strong>Example:</strong> In 2021, Microsoft Exchange was found vulnerable to SSRF through its autodiscover feature.
+    </details>
+
+    <h2>Best Practices</h2>
+    <ul>
+      <li>Validate and sanitize user inputs</li>
+      <li>Use up-to-date frameworks and libraries</li>
+      <li>Implement strong authentication & access control</li>
+      <li>Enable detailed logging and monitoring</li>
+      <li>Use HTTPS and encrypt sensitive data</li>
+    </ul>
+
+    <h2>Explore Further</h2>
+    <p>Check the full <a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP Top 10 project</a> and the <a href="https://cheatsheetseries.owasp.org/" target="_blank">OWASP Cheat Sheet Series</a> for practical guides.</p>
+
+    <p><a href="../index.html">← Back to Home</a></p>
+  </div>
+</body>
+</html>
+
+
+  <script>
+    function startVMSetup() {
+      document.getElementById("vm-status").textContent = "VM Setup Started... Please follow the installation steps.";
+    }
+
+    function startKaliSetup() {
+      document.getElementById("kali-status").textContent = "Kali Linux Setup Started... Follow the installation guide.";
+    }
+
+    function startToolsSetup() {
+      document.getElementById("tools-status").textContent = "Security Tools Setup Started... Installing tools like Nmap, Burp Suite.";
+    }
+
+    function startTestSetup() {
+      document.getElementById("test-status").textContent = "Test Setup Started... Start testing your setup in a safe and controlled environment.";
+    }
+  </script>

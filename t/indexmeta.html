@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Getting Started with Metasploit</title>
+  <link rel="stylesheet" href="/t/styleexmaeta.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Getting Started with Metasploit</h1>
+      <p>Learn the fundamentals of Metasploit, one of the most popular tools for penetration testing and vulnerability assessment.</p>
+    </header>
+
+    <section class="content">
+      <h2>What is Metasploit?</h2>
+      <p>The <strong>Metasploit Framework</strong> is an open-source penetration testing tool used by ethical hackers and security professionals to exploit vulnerabilities in a controlled environment. It provides a range of features, such as:</p>
+      <ul>
+        <li>Exploitation of known vulnerabilities</li>
+        <li>Payload creation</li>
+        <li>Post-exploitation techniques</li>
+        <li>Reporting and analysis tools</li>
+      </ul>
+
+      <h2>Installing Metasploit</h2>
+      <p>To install Metasploit on Kali Linux or other Debian-based systems, you can use the following commands:</p>
+      <pre><code>sudo apt update
+sudo apt install metasploit-framework</code></pre>
+
+      <h2>Basic Metasploit Commands</h2>
+      <p>Here are some basic commands to get started with Metasploit's <code>msfconsole</code>:</p>
+      <ul>
+        <li><code>msfconsole</code> – Launch Metasploit console</li>
+        <li><code>search [exploit]</code> – Search for a specific exploit</li>
+        <li><code>use [exploit]</code> – Select an exploit module</li>
+        <li><code>set RHOSTS [target IP]</code> – Set the target IP address</li>
+        <li><code>set PAYLOAD [payload]</code> – Choose a payload</li>
+        <li><code>exploit</code> – Execute the attack</li>
+      </ul>
+
+      <h2>Best Practices</h2>
+      <ul>
+        <li>Obtain written permission before testing a system.</li>
+        <li>Use Metasploit in a controlled, isolated environment (e.g., a penetration testing lab).</li>
+        <li>Regularly update the Metasploit framework to ensure it has the latest exploits.</li>
+      </ul>
+
+      <p>For more advanced usage and in-depth documentation, refer to the <a href="https://docs.metasploit.com/" target="_blank">official Metasploit documentation</a>.</p>
+
+      <p><a href="index.html" class="back-link">← Back to Home</a></p>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+
+/* Base styles */
+body {
+  font-family: 'Courier New', monospace;
+  background-color: #0a0a0a;
+  color: #f0f0f0;
+}
+
+body.light-theme {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Header Styles */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+  color: #0ff;
+}
+
+header button {
+  background-color: #0ff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+header button:hover {
+  background-color: #0cf;
+}
+
+/* Links and buttons */
+a {
+  text-decoration: none;
+  color: #0ff;
+}
+
+a:hover {
+  color: #f0f;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #0ff;
+  color: #000;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background-color: #0cf;
+}

@@ -1,0 +1,85 @@
+/* Tutorials Section */
+.tutorials {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.tutorials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.tutorial-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tutorial-card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+
+.tutorial-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  object-fit: cover;
+}
+
+.tutorial-card h3 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.tutorial-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.tutorial-card a {
+  text-decoration: none;
+  background-color: #1a73e8;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  align-self: flex-start;
+}
+
+.tutorial-card a:hover {
+  background-color: #0f5bd8;
+}
+
+@media (max-width: 768px) {
+  .tutorials h2 {
+    font-size: 2rem;
+  }
+
+  .tutorial-card {
+    padding: 15px;
+  }
+
+  .tutorial-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .tutorial-card p {
+    font-size: 0.95rem;
+  }
+}

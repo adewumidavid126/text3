@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Understanding the OWASP Top 10</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div class="blog-post-content">
+    <h1>Understanding the OWASP Top 10</h1>
+    <p>The OWASP Top 10 is a list of the most critical security risks to web applications, maintained by the Open Worldwide Application Security Project (OWASP). Understanding these vulnerabilities helps developers and security professionals reduce risk and build safer software.</p>
+
+    <h2>1. Broken Access Control</h2>
+    <p>Improperly enforced permissions allow attackers to access unauthorized functions or data. This can include accessing user accounts, admin panels, or sensitive files.</p>
+
+    <h2>2. Cryptographic Failures</h2>
+    <p>Formerly known as “Sensitive Data Exposure,” this category refers to the failure to protect data in transit or at rest using proper encryption techniques.</p>
+
+    <h2>3. Injection</h2>
+    <p>Injection flaws occur when untrusted data is sent to an interpreter as part of a command or query, leading to code execution or data leaks. Common types include SQL, NoSQL, OS, and LDAP injections.</p>
+
+    <h2>4. Insecure Design</h2>
+    <p>This refers to design flaws and architectural issues that lack basic security controls. These vulnerabilities are often embedded in the system from the planning phase.</p>
+
+    <h2>5. Security Misconfiguration</h2>
+    <p>Misconfigured security headers, cloud permissions, or application settings can leave systems open to attacks. Default configurations are particularly risky.</p>
+
+    <h2>6. Vulnerable and Outdated Components</h2>
+    <p>Using libraries or frameworks with known vulnerabilities can expose your application to exploitation. Regular updates and patching are crucial.</p>
+
+    <h2>7. Identification and Authentication Failures</h2>
+    <p>Previously “Broken Authentication,” this category focuses on failures in user identity verification, such as weak login systems or session mismanagement.</p>
+
+    <h2>8. Software and Data Integrity Failures</h2>
+    <p>This includes code and infrastructure that does not protect against unauthorized changes, such as unverified software updates or insecure CI/CD pipelines.</p>
+
+    <h2>9. Security Logging and Monitoring Failures</h2>
+    <p>Without proper logging and monitoring, attacks can go undetected and without response. This category emphasizes the importance of audit trails and alerts.</p>
+
+    <h2>10. Server-Side Request Forgery (SSRF)</h2>
+    <p>SSRF flaws occur when a web application fetches a remote resource without validating the user-supplied URL, potentially exposing internal systems.</p>
+
+    <p>Understanding and mitigating these vulnerabilities is essential for building secure applications. OWASP also provides <a href="https://owasp.org/www-project-top-ten/" target="_blank">extensive documentation</a> and testing guides to help developers stay informed.</p>
+
+    <p><a href="../index.html">← Back to Home</a></p>
+  </div>
+</body>
+</html>

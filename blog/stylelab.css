@@ -1,0 +1,195 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
+  line-height: 1.8;
+  padding: 40px;
+}
+
+/* Header Styles */
+header {
+  text-align: center;
+  padding: 30px 0;
+  background-color: #343a40;
+  color: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* Main Blog Post Container */
+.blog-post-content {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* Typography for Blog */
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #34495e;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+ul {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+
+li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Button Style for 'Back to Home' */
+a.back-home {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+a.back-home:hover {
+  background-color: #218838;
+}
+
+/* Details and Collapsible Section */
+details {
+  background-color: #f1f3f5;
+  border-left: 4px solid #007bff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+summary {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #007bff;
+  cursor: pointer;
+}
+
+details p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #343a40;
+  color: white;
+  margin-top: 40px;
+  border-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .blog-post-content {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  a.back-home {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 20px 0;
+  }
+
+  header h1 {
+    font-size: 1.8rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}

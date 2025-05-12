@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Network Scanning with Nmap</title>
+  <link rel="stylesheet" href="/t/stylenmap.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Network Scanning with Nmap</h1>
+    <p><strong>Nmap</strong> (Network Mapper) is one of the most powerful open-source tools used in ethical hacking for network discovery and security auditing. It helps identify live hosts, open ports, services running, and potential vulnerabilities.</p>
+
+    <h2>1. Installing Nmap</h2>
+    <p>You can install Nmap on most operating systems:</p>
+    <ul>
+      <li><strong>Kali Linux:</strong> Pre-installed</li>
+      <li><strong>Ubuntu:</strong> <code>sudo apt install nmap</code></li>
+      <li><strong>Windows:</strong> Download from <a href="https://nmap.org/download.html" target="_blank">nmap.org</a></li>
+    </ul>
+
+    <h2>2. Basic Host Discovery</h2>
+    <p>Scan a single IP:</p>
+    <pre><code>nmap 192.168.1.1</code></pre>
+
+    <p>Scan a range of IPs:</p>
+    <pre><code>nmap 192.168.1.1-20</code></pre>
+
+    <h2>3. Port Scanning</h2>
+    <p>Scan for open ports on a host:</p>
+    <pre><code>nmap -p 1-65535 192.168.1.5</code></pre>
+
+    <h2>4. Service and Version Detection</h2>
+    <p>Discover services and their versions:</p>
+    <pre><code>nmap -sV 192.168.1.5</code></pre>
+
+    <h2>5. Operating System Detection</h2>
+    <p>Use OS fingerprinting to identify the target OS:</p>
+    <pre><code>nmap -O 192.168.1.5</code></pre>
+
+    <h2>6. Aggressive Scan</h2>
+    <p>Combines OS detection, version detection, script scanning, and traceroute:</p>
+    <pre><code>nmap -A 192.168.1.5</code></pre>
+
+    <h2>7. Useful Nmap Scripts</h2>
+    <p>Nmap comes with NSE (Nmap Scripting Engine). Example:</p>
+    <pre><code>nmap --script vuln 192.168.1.5</code></pre>
+
+    <h2>Conclusion</h2>
+    <p>Nmap is a versatile tool for network scanning and enumeration. Practice using it in a safe, controlled environment such as a penetration testing lab.</p>
+
+    <p><a href="/t/indexT.html" class="back-link">← Back to Home</a></p>
+  </div>
+</body>
+</html>

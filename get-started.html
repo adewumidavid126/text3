@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get Started with CyberSecure</title>
+  <link rel="stylesheet" href="style2.css" />
+  <script>
+    // Toggle theme function
+    function toggleTheme() {
+      const body = document.body;
+      body.classList.toggle("light-theme");
+      const currentTheme = body.classList.contains("light-theme") ? "light" : "dark";
+      localStorage.setItem("theme", currentTheme); // Store theme preference
+    }
+
+    // Load theme from local storage
+    window.onload = () => {
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme && savedTheme === "light") {
+        document.body.classList.add("light-theme");
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="blog-post-content">
+    <header>
+      <h1>Get Started with Ethical Hacking</h1>
+      <button onclick="toggleTheme()">Toggle Dark/Light Mode</button>
+    </header>
+
+    <p>Welcome to CyberSecure. This guide will show you how to begin your journey into ethical hacking, cybersecurity, and penetration testing.</p>
+
+    <h2>1. Watch This Intro Video</h2>
+    <div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;margin-bottom:20px;">
+      <iframe src="https://www.youtube.com/embed/3Kq1MIfTWCE" 
+              frameborder="0" allowfullscreen 
+              style="position:absolute;top:0;left:0;width:100%;height:100%;">
+      </iframe>
+    </div>
+
+    <h2>2. Why Cybersecurity Matters</h2>
+    <p>Cybercrime is rising globally. Ethical hackers play a key role in defending systems against breaches, data theft, and malware attacks.</p>
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Hacker_Hacking.jpg/640px-Hacker_Hacking.jpg" alt="Hacker illustration" style="max-width:100%;margin:20px 0;border-radius:10px;" />
+
+    <h2>3. Recommended Learning Platforms</h2>
+    <ul>
+      <li><a href="https://tryhackme.com" target="_blank">TryHackMe</a> – Gamified cybersecurity training for beginners</li>
+      <li><a href="https://www.hackthebox.com" target="_blank">Hack The Box</a> – Realistic hacking labs and certification</li>
+      <li><a href="https://www.cybrary.it" target="_blank">Cybrary</a> – Free and paid cybersecurity courses</li>
+      <li><a href="https://www.udemy.com/topic/ethical-hacking/" target="_blank">Udemy: Ethical Hacking Courses</a></li>
+    </ul>
+
+    <h2>4. Tools You Should Know</h2>
+    <p>Get familiar with these essential tools for ethical hacking:</p>
+    <ul>
+      <li><strong>Nmap:</strong> Network scanner (<a href="https://nmap.org/" target="_blank">nmap.org</a>)</li>
+      <li><strong>Burp Suite:</strong> Web vulnerability scanner (<a href="https://portswigger.net/burp" target="_blank">portswigger.net</a>)</li>
+      <li><strong>Metasploit:</strong> Exploitation framework (<a href="https://www.metasploit.com/" target="_blank">metasploit.com</a>)</li>
+      <li><strong>Wireshark:</strong> Packet analyzer (<a href="https://www.wireshark.org/" target="_blank">wireshark.org</a>)</li>
+    </ul>
+
+    <h2>5. Community Forums & News</h2>
+    <ul>
+      <li><a href="https://www.reddit.com/r/netsec/" target="_blank">Reddit: r/netsec</a> – Security news & discussion</li>
+      <li><a href="https://www.hackerone.com/" target="_blank">HackerOne</a> – Bug bounty platform</li>
+      <li><a href="https://owasp.org/" target="_blank">OWASP</a> – Open Web Application Security Project</li>
+    </ul>
+
+    <h2>6. Download PDF Guide</h2>
+    <p>Download our comprehensive PDF guide to Ethical Hacking and Cybersecurity:</p>
+    <a href="https://drive.google.com/file/d/1ViAM9OvZAeg0xrwkYvUFkvvYUTkndamm/view?usp=drive_link" target="_blank" class="btn">Download PDF</a>
+
+    <p><a href="index.html">← Back to Home</a></p>
+  </div>
+</body>
+</html>
